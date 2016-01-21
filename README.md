@@ -27,7 +27,11 @@ dispatcher.trigger('beer', {
 ```
 
 ## API Reference
->`dispatcher.on(eventName, handler)` — subscribes handler to eventName
->`dispatcher.trigger(eventName, payload)` or `dispatcher.send(eventName, payload)` — Fires `eventName` event to all
->`dispatcher.on('all', handler)` — subscribes for all the events being fired
->`dispatcher.off(eventName)` — removes eventName from events list
+
+`dispatcher.on(eventName, handler)` — subscribes handler to eventName
+
+`dispatcher.trigger(eventName, payload)` or `dispatcher.send(eventName, payload)` — Fires `eventName` event to all
+
+`dispatcher.on('all', handler)` — subscribes for all the events being fired
+
+`dispatcher.off(eventName)` — removes eventName from events list
