@@ -1,6 +1,6 @@
 {
-  "name": "balabol",
-  "version": "1.0.1",
+  "name": "@jetradar/dispatcher",
+  "version": "1.0.2",
   "description": "extremely simple blazing-fast pure javascript publisher-subscriber",
   "main": "index.js",
   "scripts": {
