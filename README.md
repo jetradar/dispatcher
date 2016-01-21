@@ -6,7 +6,7 @@ extremely simple blazing-fast pure javascript publisher-subscriber
 
 ## Examples
 ```javascript
-import { dispatcher } from '@jetradar/dispatcher';
+import dispatcher from '@jetradar/dispatcher';
 
 dispatcher.on('beer', (eventName, data) => {
   console.log(data.isDraught);
