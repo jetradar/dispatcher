@@ -2,11 +2,11 @@
 extremely simple blazing-fast pure javascript publisher-subscriber
 
 ## Installation
-`npm install balabol --save`
+`npm install @jetradar/dispatcher --save`
 
 ## Examples
 ```javascript
-import { dispatcher } from 'balabol';
+import { dispatcher } from '@jetradar/dispatcher';
 
 dispatcher.on('beer', (eventName, data) => {
   console.log(data.isDraught);
@@ -32,6 +32,6 @@ dispatcher.trigger('beer', {
 
 `dispatcher.trigger(eventName, payload)` or `dispatcher.send(eventName, payload)` — Fires `eventName` event to all
 
-`dispatcher.on('all', handler)` — subscribes for all the events being fired
+`dispatcher.all(handler)` or `dispatcher.on('*', handler)` — subscribes for all the events being fired
 
 `dispatcher.off(eventName)` — removes eventName from events list
